@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string:");
+        let len = str.length;
+        let msg = "It is a palindrome";
+        for(var i=0; i<=len; i++){
+            if(str[i] != str[len-1-i]){
+               msg = "It is not a palindrome"; 
+            }
+        }
+        console.log(msg);
+    </script>
+</body>
+</html>

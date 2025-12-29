@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Factorial</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("Enter the Number:");
+
+      if (n === null) {
+        console.log("Input Cancelled!");
+      } else {
+        n = Number(n);
+        if (isNaN(n)) {
+          console.log("Invalid Input");
+        } else {
+          if (n > 0) {
+            let fact = 1;
+            for (var i = 1; i <= n; i++) {
+              fact = fact * i;
+            }
+            console.log(`Factorial is ${fact}`);
+          } else {
+            console.log("Input should be +ve or more than 0");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
